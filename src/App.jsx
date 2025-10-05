@@ -8,7 +8,7 @@ export default function App() {
     <>
       <main className="flex flex-col items-center justify-center min-h-screen">
         <Profile url={ProfileImg} />
-        <Links url="#" content="Test"/>
+        <Links/>
       </main>
     </>
   )
