@@ -2,14 +2,14 @@ import LinksContainer from "./LinksContainer";
 import "../css/Links.css"
 
 import { GrYoutube } from "react-icons/gr";
-import { FaTwitch, FaDiscord } from "react-icons/fa";
+import { FaTwitch, FaDiscord, FaTrophy } from "react-icons/fa";
 
 const LinksData = [
     {
         id: "1",
         url: "https://www.youtube.com/@JajouGoat",
         content: "Youtube",
-        css: { 
+        css: {
             color: "bg-red-500",
         },
         component: <GrYoutube size={30} />
@@ -32,7 +32,17 @@ const LinksData = [
             color: "bg-blue-500"
         },
         component: <FaDiscord size={30} />
+    },
+    {
+        id: "4",
+        url: "https://www.speedrun.com/users/JajouGoaty",
+        content: "Speedrun",
+        css: {
+            color: "bg-yellow-500"
+        },
+        component: <FaTrophy size={30} />
     }
+
 ]
 
 
