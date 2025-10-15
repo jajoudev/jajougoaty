@@ -1,23 +1,20 @@
 import ProfileContainer from "./ProfileContainer";
-import TypewriterComponent from "typewriter-effect";
+import TextType from "./animations/TextType"
 
 export default function Profile({ url }) {
     return (
         <ProfileContainer>
-            <img className="rounded-full w-56" src={url} alt="My profile Photo !" />
+            <img className="rounded-full text- w-56" src={url} alt="My profile Photo !" />
             <div className="mt-4">
-                <TypewriterComponent options={{
-                    strings: ["JajouGoaty", "Jajou"],
-                    autoStart: true,
-                    loop: true,
-                    wrapperClassName: "text-2xl font-semibold"
-                }}/>
-                <TypewriterComponent options={{
-                    strings: ["Young Creative Artist", "6 7", "French Content Creator", "French Web Developer", "Roblox Speedruner", "Roblox Developer Jr.", "Website developed by me :D"],
-                    autoStart: true,
-                    loop: true,
-                    wrapperClassName: "font-medium",
-                }}/>
+                <TextType
+                    text={["JajouGoat", "Jajou64", ""]}
+                    typingSpeed={75}
+                    textColors={["text-black"]}
+                    className="text-2xl"
+                    pauseDuration={1500}
+                    showCursor={true}
+                    cursorCharacter="|" 
+                    />
             </div>
         </ProfileContainer>
     )
